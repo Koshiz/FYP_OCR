@@ -39,12 +39,9 @@ const page: FC = () => {
           };
 
         fetch("http://127.0.0.1:8080/detect_img", requestOptions)
-            .then(response => {
-              response.text()
-              console.log(response)
-              // setResponseData(response.json)
+            .then(async response => {
+              setResponseData(await response.json())
             })
-            .then(result => console.log(result))
             .catch(error => console.log('error', error));
         
       };
