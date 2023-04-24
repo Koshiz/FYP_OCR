@@ -4,6 +4,8 @@ import Paragraph from '@/components/ui/Paragraph'
 import { FC, ChangeEvent, useState, useRef } from 'react'
 import 'simplebar-react/dist/simplebar.min.css'
 
+
+
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -56,5 +58,6 @@ const page: FC = () => {
     </div>
   )
 }
+
 
 export default page
